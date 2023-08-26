@@ -20,6 +20,9 @@ app.get("/", async (req, res) => {
     res.render('index', { conferenceList: result.content.data })
 })
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
     console.log(`server running on port ${PORT}`)
 })
+
+server.keepAliveTimeout = 120 * 1000;
+server.headersTimeout = 120 * 1000;
