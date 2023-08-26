@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+
+/* Reset some default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: #fcfcfc;
+}
+
+
+
+#navbar {
+    background: linear-gradient(to right, #ff930f, #e60b09);
+    color: #fff;
+    /* White text color */
+    text-align: center;
+    padding: 1rem;
+}
+
+#navbar h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Style for the main conference card container */
+#conference-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Style for each individual conference card */
+.conference-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.2rem;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style for the conference banner image */
+.conference-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+
+}
+
+/* Style for the conference title */
+.conference-card .title {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Style for the date and time */
+.conference-card .date-and-time {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+/* Style for the organizer section */
+.conference-card .organizer {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the organizer icon */
+.conference-card .organizer img {
+    height: 2rem;
+    width: auto;
+
+}
+
+/* Style for the organizer name */
+.conference-card .organizer span {
+    padding-left: 0.7rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Style for the venue section */
+.conference-card .venue-container {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+.venue-container .venue {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.description {
+    font-size: 0.85rem;
+}

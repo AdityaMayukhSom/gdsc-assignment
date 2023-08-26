@@ -1,0 +1,31 @@
+{
+  "name": "gdsc_assignment",
+  "version": "1.0.0",
+  "description": "Don't know why am I even doing this?",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdityaMayukhSom/gdsc-assignment.git"
+  },
+  "keywords": [
+    "gdsc"
+  ],
+  "author": "Aditya Mayukh Som",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdityaMayukhSom/gdsc-assignment/issues"
+  },
+  "homepage": "https://github.com/AdityaMayukhSom/gdsc-assignment#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

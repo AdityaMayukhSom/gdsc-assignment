@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title Conference Details
+    link(rel="stylesheet" href="styles.css")
+  body
+    nav#navbar
+        h1.navbar-title GDSC Dev Assignment
+    main#conference-list
+        each conference in conferenceList
+            div.conference-card(id=`${conference.id}`)
+                img(src=conference.banner_image, alt=conference.title)
+                h2.title= conference.title
+                p.date-and-time Date: #{new Date(conference.date_time).toLocaleDateString()}
+                .organizer
+                    img(src=conference.organiser_icon, alt=conference.organiser_name)
+                    span= conference.organiser_name
+                .venue-container
+                    p.venue Venue: #{conference.venue_name}
+                    p.venue City: #{conference.venue_city}
+                    p.venue Country: #{conference.venue_country}
+                p.description= conference.description
