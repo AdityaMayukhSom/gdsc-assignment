@@ -4,119 +4,123 @@
 
 /* Reset some default margin and padding */
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'JetBrains Mono', monospace;
+  margin: 0;
+  padding: 0;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 /* Apply a background color to the body */
 body {
-    background-color: #fcfcfc;
+  background-color: #fcfcfc;
 }
 
 #navbar {
-    background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
 }
 
 #navbar h1 {
-    margin: 0;
-    font-size: 1.5rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 
 /* Style for the main conference card container */
 #conference-list {
-    display: grid;
-    gap: 2rem;
-    padding: 2rem;
-    justify-content: center;
-    grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 @media (max-width: 768px) {
-    #conference-list {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  #conference-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 576px) {
-    #conference-list {
-        grid-template-columns: repeat(1, 1fr);
-    }
+  #conference-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* Style for each individual conference card */
 .conference-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
-    padding: 1.2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.2rem;
 }
 
 /* Style for the conference banner image */
 .conference-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 /* Style for the conference title */
 .conference-card .title {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Style for the date and time */
 .conference-card .date-and-time {
-    font-size: 0.9rem;
-    color: #888;
-    margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #4f4f4f;
+  margin-bottom: 10px;
 }
 
 /* Style for the organizer section */
 .conference-card .organizer {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 /* Style for the organizer icon */
 .conference-card .organizer img {
-    height: 2rem;
-    width: auto;
-
+  height: 2rem;
+  width: auto;
 }
 
 /* Style for the organizer name */
 .conference-card .organizer span {
-    padding-left: 0.7rem;
-    font-weight: 500;
-    font-size: 0.9rem;
-    color: #333;
+  padding-left: 0.7rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #333;
 }
 
 /* Style for the venue section */
 .conference-card .venue-container {
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
 }
 
 .venue-container .venue {
-    font-size: 0.8rem;
-    color: #666;
+  font-size: 0.8rem;
+  color: #666;
 }
 
 .description {
-    font-size: 0.85rem;
+  font-size: 0.85rem;
 }
 
 footer {
-    border: 1px solid #d0d0d0;
-    padding: 1rem;
-    text-align: center;
+  border: 1px solid #d0d0d0;
+  padding: 1rem;
+  text-align: center;
 }
